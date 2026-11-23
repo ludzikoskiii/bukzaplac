@@ -8,6 +8,14 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 
+app.get('/log', (req, res) => {
+  res.render('log', { title: 'Express' });
+});
+
+app.get('/register', (req, res) => {
+  res.render('register', { title: 'Express' });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
