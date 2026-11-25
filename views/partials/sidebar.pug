@@ -4,28 +4,23 @@
   
   hr
   ul.nav.nav-pills.flex-column.mb-auto
-    li.nav-item
-      a.nav-link.active(
-        aria-current="page" 
-        href="#"
-        )
-        svg.bi.pe-none.me-2(
-          aria-hidden="true" 
-          height="36" 
-          width="36"
-          )
-          use(xlink:href="#home")
-        | Charts
     li
-      a.nav-link.link-body-emphasis(href="#")
-      
+      a.nav-link(href="/charts" class=currentPath === '/charts' ? 'active' : '') | Charts
         svg.bi.pe-none.me-2(
           aria-hidden="true" 
           height="36" 
           width="36"
           )
-          use(xlink:href="#speedometer2")
-        | Coupons
+          a(href="#charts.pug")
+    li
+      a.nav-link(href="/coupons" class=currentPath === '/coupons' ? 'active' : '') | Coupons   
+        svg.bi.pe-none.me-2(
+          aria-hidden="true" 
+          height="36" 
+          width="36"
+          )
+          a(href="#coupons.pug")
+        
        
   hr
   .dropdown
