@@ -1,0 +1,55 @@
+.d-flex.flex-column.flex-shrink-0.p-3.bg-body-tertiary.min-vh-100(style="width: 280px;")
+  a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.link-body-emphasis.text-decoration-none(href="/")
+    img.d-sidebar-narrow-none(  height="52" src="/img/bukzaplac-logo.svg"  alt="BukZaplac")  
+  
+  hr
+  ul.nav.nav-pills.flex-column.mb-auto
+    li.nav-item
+      a.nav-link.active(
+        aria-current="page" 
+        href="#"
+        )
+        svg.bi.pe-none.me-2(
+          aria-hidden="true" 
+          height="36" 
+          width="36"
+          )
+          use(xlink:href="#home")
+        | Charts
+    li
+      a.nav-link.link-body-emphasis(href="#")
+      
+        svg.bi.pe-none.me-2(
+          aria-hidden="true" 
+          height="36" 
+          width="36"
+          )
+          use(xlink:href="#speedometer2")
+        | Coupons
+       
+  hr
+  .dropdown
+    a.d-flex.align-items-center.link-body-emphasis.text-decoration-none.dropdown-toggle(
+      aria-expanded="false" 
+      data-bs-toggle="dropdown" 
+      role="button" 
+      href="#"
+      )
+      img.rounded-circle.me-2(
+        height="50" 
+        width="50" 
+        alt="" 
+        src="https://github.com/mdo.png"
+        )
+      strong mdo
+    ul.dropdown-menu.shadow
+      li
+        a.dropdown-item(href="#") New project...
+      li
+        a.dropdown-item(href="#") Settings
+      li
+        a.dropdown-item(href="#") Profile
+      li
+        hr.dropdown-divider
+      li
+        a.dropdown-item(href="#") Sign out

@@ -10,6 +10,18 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 
+app.get('/coupons', (req, res) => {
+  res.render('coupons', { title: 'Express' });
+});
+
+app.get('/charts', (req, res) => {
+  res.render('charts', { title: 'Express' });
+});
+
+app.get('/settings', (req, res) => {
+  res.render('settings', { title: 'Express' });
+});
+
 app.get('/log', (req, res) => {
   res.render('log', { title: 'Express' });
 });
