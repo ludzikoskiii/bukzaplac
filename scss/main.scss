@@ -4,6 +4,11 @@ $primary: #3993DD;
 .color{
     color: $primary;
 }
+.border{
+    border: 20px solid $primary;
+    border-radius: 20px;
+    
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "sidebars";
 

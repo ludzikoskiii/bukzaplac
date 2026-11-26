@@ -1,9 +1,9 @@
 extends layout 
 
 block content
-    .d-flex.fs-2
-        include partials/sidebar
-         link(rel="stylesheet" href="/css/sidebar.css")
-         main.flex-grow-1.p-4.position-absolute.top-50
-            block page
-                
+  link(rel="stylesheet", href="/css/sidebar.css")
+  .d-flex.fs-2
+     include partials/sidebar
+     main.flex-grow-1.p-4
+       block page
+          h1 Welcome to BukZaplac

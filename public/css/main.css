@@ -3,6 +3,11 @@
   color: #3993DD;
 }
 
+.border {
+  border: 20px solid #3993DD;
+  border-radius: 20px;
+}
+
 /*!
  * Bootstrap  v5.3.9 (https://getbootstrap.com/)
  * Copyright 2011-2026 The Bootstrap Authors
