@@ -1,6 +1,9 @@
 //zmienne
-$primary: #1a7f5a;
+$primary: #3993DD;
 
+.color{
+    color: $primary;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "sidebars";
 

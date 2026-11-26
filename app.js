@@ -6,6 +6,11 @@ const path = require('path');
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use((req, res, next) => {
+  res.locals.currentPath = req.path;
+  next();
+});
+
 app.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
@@ -32,9 +37,4 @@ app.get('/register', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
-});
-
-app.use((req, res, next) => {
-  res.locals.currentPath = req.path;
-  next();
 });
